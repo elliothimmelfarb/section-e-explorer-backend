@@ -56,4 +56,4 @@ router.get('/schedule_e/by_committee/:committeeId/by_candidate/:candidateId', (r
 });
 
 
-export default router;
+module.exports = router;
