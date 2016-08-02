@@ -5,9 +5,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const http = require('http');
-const favicon = require('serve-favicon');
 const logger = require('morgan');
-const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -30,13 +28,11 @@ server.listen(PORT, err => {
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 
 // /////// ROUTERS //////////////
 
-app.use('/api', require('./routes/api.routes'));
+app.use('/api', require('./api/index'));
 
 // //////////////////////////////
 

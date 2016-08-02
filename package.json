@@ -1,0 +1,31 @@
+{
+  "name": "fec-section-e-explorer-backend-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliothimmelfarb/section-e-explorer-backend.git"
+  },
+  "engines": {
+    "node": "v6.2.1"
+  },
+  "keywords": [],
+  "author": "Elliot Himmelfarb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elliothimmelfarb/section-e-explorer-backend/issues"
+  },
+  "homepage": "https://github.com/elliothimmelfarb/section-e-explorer-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  }
+}
