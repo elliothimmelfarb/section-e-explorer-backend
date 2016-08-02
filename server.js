@@ -22,7 +22,7 @@ server.listen(PORT, err => {
 });
 
 // view engine setup
-
+app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
 app.use(logger('dev'));
@@ -37,7 +37,7 @@ app.use('/api', require('./api/index'));
 // //////////////////////////////
 
 app.get('/', (req, res) => {
-  res.send("Hello");
+  res.send('hello');
 });
 
 // catch 404 and forward to error handler
