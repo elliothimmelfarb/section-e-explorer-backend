@@ -14,8 +14,6 @@ const committeeNameSearch = (name) => `${baseURI}/names/committees/?q=${name}&ap
 const schedEByCommitteeAndCandidate = (committeeId, candidateId) =>
   `${baseURI}//schedules/schedule_e/?candidate_id=${candidateId}&api_key=${key}&committee_id=${committeeId}&per_page=50`;
 
-console.log(committeeNameSearch('HUMAN%20RIGHTS%20CAMPAIGN%20PAC'));
-
 router.get('/', (req, res) => {
   res.send('working');
 });
