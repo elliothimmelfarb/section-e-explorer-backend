@@ -9,7 +9,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 
 const app = express();
-// const server = http.createServer(app);
+const server = http.createServer(app);
 
 // const mongoose = require('mongoose');
 // const mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost/final-test-yelp';
