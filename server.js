@@ -9,7 +9,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 
 const app = express();
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
 // const mongoose = require('mongoose');
 // const mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost/final-test-yelp';
@@ -29,9 +29,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(function(req, res, next) {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    return next();
-  });
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  return next();
+});
 
 
 // /////// ROUTERS //////////////
