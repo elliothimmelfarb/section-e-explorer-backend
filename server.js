@@ -17,7 +17,7 @@ const server = http.createServer(app);
 //   console.log(err || `MongoDB connected to ${mongoUrl}`); // eslint-disable-line no-console
 // });
 
-app.listen(PORT, err => {
+server.listen(PORT, err => {
   console.log(err || `Server listening on port ${PORT}`); // eslint-disable-line no-console
 });
 
