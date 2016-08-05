@@ -1,7 +1,10 @@
+require('dotenv').config();
+
 const express = require('express');
 const request = require('request');
 
 const router = new express.Router();
+
 
 const key = process.env.OPEN_FEC_KEY;
 
