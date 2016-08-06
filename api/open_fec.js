@@ -11,7 +11,7 @@ const key = process.env.OPEN_FEC_KEY;
 const baseURI = 'https://api.open.fec.gov/v1';
 
 const schedEByCandidate = (candidateId) => `${baseURI}/schedules/schedule_e/by_candidate/?candidate_id=${candidateId}&api_key=${key}&per_page=70`;
-const schedEByCommittee = (committeeId) => `${baseURI}/committee/${committee_id}/schedules/schedule_e/by_candidate/&api_key=${key}&per_page=70`;
+const schedEByCommittee = (committeeId) => `${baseURI}/committee/${committee_id}/schedules/schedule_e/by_candidate/?api_key=${key}&per_page=70`;
 const candidateNameSearch = (name) => `${baseURI}/names/candidates/?q=${name}&api_key=${key}&per_page=70`;
 const committeeNameSearch = (name) => `${baseURI}/names/committees/?q=${name}&api_key=${key}&per_page=50`;
 const schedEByCommitteeAndCandidate = (committeeId, candidateId) =>
