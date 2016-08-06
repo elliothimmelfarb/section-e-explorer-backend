@@ -15,7 +15,7 @@ const schedEByCommittee = (committeeId) => `${baseURI}/committee/${committeeId}/
 const candidateNameSearch = (name) => `${baseURI}/names/candidates/?q=${name}&api_key=${key}&per_page=70`;
 const committeeNameSearch = (name) => `${baseURI}/names/committees/?q=${name}&api_key=${key}&per_page=50`;
 const schedEByCommitteeAndCandidate = (committeeId, candidateId) =>
-  `${baseURI}//schedules/schedule_e/?candidate_id=${candidateId}&api_key=${key}&committee_id=${committeeId}&per_page=70`;
+  `${baseURI}/schedules/schedule_e/?candidate_id=${candidateId}&api_key=${key}&committee_id=${committeeId}&per_page=70`;
 
 router.get('/', (req, res) => {
   res.send('working');
